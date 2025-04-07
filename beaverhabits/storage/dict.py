@@ -66,7 +66,6 @@ class HabitDataCache:
 
 @dataclass
 class DictHabit(Habit[DictRecord], DictStorage):
-
     def __init__(self, data: dict) -> None:
         self.data = data
         self.cache = HabitDataCache(self)

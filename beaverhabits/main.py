@@ -81,7 +81,6 @@ if settings.DEBUG:
     from psutil._common import bytes2human
 
     class MemoryMonitor:
-
         def __init__(self) -> None:
             self.last_mem: int = 0
             self.obj_count: dict[str, int] = {}
